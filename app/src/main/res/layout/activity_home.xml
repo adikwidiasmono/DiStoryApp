@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/sign_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/ic_launcher_round"
+        android:transitionName="appIcon"
+        app:layout_constraintBottom_toBottomOf="@id/mbSignOut"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mbSignOut" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        style="@style/MaterialAlertDialog.Material3.Title.Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:transitionName="appName"
+        app:layout_constraintBottom_toBottomOf="@id/mbSignOut"
+        app:layout_constraintEnd_toStartOf="@id/mbSignOut"
+        app:layout_constraintStart_toEndOf="@id/ivAppIcon"
+        app:layout_constraintTop_toTopOf="@id/mbSignOut" />
+
+    <TextView
+        android:id="@+id/tvLoginName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/mbSignOut"
+        app:layout_constraintStart_toStartOf="@id/ivAppIcon"
+        app:layout_constraintTop_toBottomOf="@id/ivAppIcon"
+        tools:text="@string/hello_user" />
+
+    <ImageView
+        android:id="@+id/ivStoryList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/list_of_story"
+        android:src="@drawable/ic_twotone_book_24"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginName"
+        app:tint="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/list_of_story"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/ivStoryList"
+        app:layout_constraintStart_toStartOf="@id/ivStoryList"
+        app:layout_constraintTop_toBottomOf="@id/ivStoryList" />
+
+    <ImageView
+        android:id="@+id/ivStoryMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/story_in_maps"
+        android:src="@drawable/ic_twotone_map_24"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="@id/ivStoryList"
+        app:tint="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/story_in_maps"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/ivStoryMap"
+        app:layout_constraintStart_toStartOf="@id/ivStoryMap"
+        app:layout_constraintTop_toBottomOf="@id/ivStoryMap" />
+
+    <ImageView
+        android:id="@+id/ivLanguage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/change_language"
+        android:src="@drawable/ic_twotone_language_24"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/ivStoryList"
+        app:tint="@android:color/holo_green_light" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/change_language"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/ivLanguage"
+        app:layout_constraintStart_toStartOf="@id/ivLanguage"
+        app:layout_constraintTop_toBottomOf="@id/ivLanguage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

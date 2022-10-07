@@ -1,0 +1,55 @@
+A. fetchStories() Test
+    1. Memastikan method fetchStories dapat dipanggil
+    2. Memastikan data story tidak null
+    3. Memastikan kesamaan data balikan dengan data dummy
+
+B. addNewStory(uri: Uri, desc: String, lat: Double, lon: Double) Test
+-Success
+    1. Memastikan dapat berhasil ketika upload gambar uri
+    2. Memastikan data balikan tidak null
+    3. Memastikan kesamaan data balikan adalah data dummy yang sukses
+    4. Memastikan method addNewStory dapat dipanggil
+    5. BaseResult = Success
+-Error
+    1. Memastikan gagal upload gambar
+    2. Memastikan data response adalah response gagal
+    3. BaseResult = Error
+
+C. validateSignInUser(request: RequestLogin) Test
+-Success
+    1. Memastikan sign in success
+    2. Memastikan data balikan tidak null
+    3. Memastikan data balikan berisi informasi user sesuai data dummy
+    4. Memastikan method validateSignInUser dapat dipanggil
+    5. BaseResult = Success
+-Error
+    1. Memastikan sign in gagal
+    2. Memastikan data balikan tidak null dan user data invalid
+    3. Memastikan method validateSignInUser dapat dipanggil
+    4. BaseResult = Error
+
+D. registerNewUser(request: RequestRegister) Tests
+-Success
+    1. Memastikan register success
+    2. Memastikan data balikan tidak null
+    3. Memastikan kesamaan data balikan adalah data dummy yang sukses
+    4. Memastikan method registerNewUser dapat dipanggil
+    5. BaseResult = Success
+-Error
+    1. Memastikan register gagal
+    2. Memastikan data response adalah response gagal
+    3. Memastikan method registerNewUser dapat dipanggil
+    4. BaseResult = Error
+
+E. fetchStoriesWithLocation() Test
+-Success
+    1. Memastikan method fetchStoriesWithLocation dapat dipanggil
+    2. Memastikan data story tidak null
+    3. Memastikan kesamaan data balikan dengan data dummy
+    4. BaseResult = Success
+-Error
+    1. Memastikan data gagal diambil
+    2. Memastikan data null tidak null akan tetepi kosong ketika gagal
+    3. Memastikan method fetchStoriesWithLocation dapat dipanggil
+    4. BaseResult = Error
+

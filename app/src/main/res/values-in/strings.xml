@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Di Story App</string>
+
+    <string name="err_password_length">Kata kunci minimal 6 karakter</string>
+    <string name="err_offline">Kamu sedang tidak terhubung ke internet</string>
+    <string name="err_mandatory_field">Kolom ini wajib diisi, silahkan mengisi</string>
+    <string name="err_mandatory_image">Gambar wajib diisi, silahkan pilih</string>
+    <string name="err_email_format">Format email salah</string>
+    <string name="err_no_data">Tidak ada data</string>
+
+    <string name="email">Email</string>
+    <string name="password">Kata kunci</string>
+    <string name="sign_in">Masuk</string>
+    <string name="i_want_to_create_an_account">Saya ingin membuat akun</string>
+    <string name="back">Kembali</string>
+    <string name="create_new_user">Membuat Pengguna Baru</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="sign_up">Pendaftaran</string>
+    <string name="sign_out">Keluar</string>
+    <string name="list_of_story">Daftar Cerita</string>
+    <string name="story_image">Gambar Cerita</string>
+    <string name="hello_user">Halo, %1$s. Selamat datang di Di Story App</string>
+    <string name="story_lat_long">Lat Long : %1$.4f, %2$.4f</string>
+    <string name="create_new_story">Membuat Cerita Baru</string>
+    <string name="description">Deskripsi</string>
+    <string name="choose_your_story_image">Pilih gambar untuk cerita kamu</string>
+    <string name="add_new_story">Menambahkan Cerita Baru</string>
+    <string name="task_cancelled">Dibatalkan</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="story_in_maps">Cerita di Peta</string>
+    <string name="loading">Memproses . . .</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="current_location">Lokasi Saat Ini</string>
+    <string name="unknown">Tidak Diketahui</string>
+</resources>
